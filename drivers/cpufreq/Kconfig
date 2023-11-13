@@ -120,6 +120,16 @@ config CPU_FREQ_DEFAULT_GOV_SCHEDUTIL
 	  have a look at the help section of that governor. The fallback
 	  governor will be 'performance'.
 
+config CPU_FREQ_DEFAULT_GOV_DARKNESS
+	bool "darkness"
+	depends on SMP
+	select CPU_FREQ_GOV_DARKNESS
+	select CPU_FREQ_GOV_PERFORMANCE
+	help
+	  Use the 'darkness' CPUFreq governor by default. If unsure,
+	  have a look at the help section of that governor. The fallback
+	  governor will be 'schedutil'.
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -144,14 +154,14 @@ config CPU_FREQ_GOV_POWERSAVE
 
 	  If in doubt, say Y.
 
-config CPU_FREQ_GOV_RAD
-	tristate "'rad' governor"
+config CPU_FREQ_GOV_DARKNESS
+	tristate 'darkness' governor"
 	help
 	  This cpufreq governor sets the frequency statically to the
 	  lowest available CPU frequency.
 
 	  To compile this driver as a module, choose M here: the
-	  module will be called cpufreq_rad.
+	  module will be called cpufreqq_darkness.
 
 	  If in doubt, say Y.	  
 
