@@ -151,7 +151,7 @@ config CPU_FREQ_GOV_DARKNESS
 	  lowest available CPU frequency.
 
 	  To compile this driver as a module, choose M here: the
-	  module will be called cpufreqq_darkness.
+	  module will be called cpufreq_darkness.
 
 	  If in doubt, say Y.	  
 
