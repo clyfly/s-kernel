@@ -145,7 +145,7 @@ config CPU_FREQ_GOV_POWERSAVE
 	  If in doubt, say Y.
 
 config CPU_FREQ_GOV_DARKNESS
-	tristate 'darkness' governor"
+	tristate "'darkness' governor"
 	help
 	  This cpufreq governor sets the frequency statically to the
 	  lowest available CPU frequency.
